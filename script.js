@@ -30,7 +30,7 @@ $(document).ready(function() {
                 logo = 'http://marathi.world/wp-content/themes/pinthis/skins/fresh/images/icon-error-404.png';
                 name = data1.statusText;
                 status = data1.status;
-                $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2'>" + "<img src='" + logo + "'>" +
                     "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" + status + "</div>" + "</div>");
             },
             success: function(data2) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
                     status = data2.stream.channel.status;
                     name = data2.stream.channel.display_name;
                     channelURL = data2.stream.channel.url;
-                    $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                    $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2'>" + "<img src='" + logo + "'>" +
                         "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" +
                         "<a href='" + channelURL + "' target='_blank'>" + status + "</a></div>" + "</div>");
                 } else { //if channel is offline
@@ -56,7 +56,7 @@ $(document).ready(function() {
                             logo = data3.logo;
                             name = data3.display_name;
                             status = "OFFLINE";
-                            $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                            $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2'>" + "<img src='" + logo + "'>" +
                                 "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" + status + "</div>" + "</div>");
                         }
                     });

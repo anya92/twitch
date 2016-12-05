@@ -4,7 +4,6 @@ body {
     font-family: 'Antic Slab', serif;
 }
 #header {
-    $background-color: #FF3333;
     font-family: 'Luckiest Guy', cursive;
     margin-top: 30px;
 }
@@ -21,14 +20,11 @@ a:link {
 
 .list {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .name, .status {
   font-size: 18px;
   margin-top: 10px;
-}
-
-#channelInfo {
-    $background-color: #333333;
 }
 
 .channels {
@@ -43,5 +39,3 @@ img {
     height: 60px;
     border-radius: 100%;
 }
-
-.logo {}
