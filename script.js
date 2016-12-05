@@ -30,8 +30,8 @@ $(document).ready(function() {
                 logo = 'http://marathi.world/wp-content/themes/pinthis/skins/fresh/images/icon-error-404.png';
                 name = data1.statusText;
                 status = data1.status;
-                $("#followerInfo").append("<div class = 'row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" +
-                    "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div>" + "</div>");
+                $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                    "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" + status + "</div>" + "</div>");
             },
             success: function(data2) {
                 if (data2.stream !== null) { //if channel is online
@@ -42,8 +42,8 @@ $(document).ready(function() {
                     status = data2.stream.channel.status;
                     name = data2.stream.channel.display_name;
                     channelURL = data2.stream.channel.url;
-                    $("#followerInfo").append("<div class = 'row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" +
-                        "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" +
+                    $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                        "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" +
                         "<a href='" + channelURL + "' target='_blank'>" + status + "</a></div>" + "</div>");
                 } else { //if channel is offline
                     $.ajax({
@@ -56,8 +56,8 @@ $(document).ready(function() {
                             logo = data3.logo;
                             name = data3.display_name;
                             status = "OFFLINE";
-                            $("#followerInfo").append("<div class = 'row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" +
-                                "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div>" + "</div>");
+                            $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2 logo'>" + "<img src='" + logo + "'>" +
+                                "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" + status + "</div>" + "</div>");
                         }
                     });
                 }
