@@ -3,16 +3,21 @@ body {
     color: #003333;
     font-family: 'Antic Slab', serif;
 }
+
 #header {
     font-family: 'Luckiest Guy', cursive;
     margin-top: 30px;
 }
+
 h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
-a:link {
-  color: #003333;
+
+a {
+    color: #003333;
+    text-decoration: none;
 }
+
 .fcc {
     margin-top: 20px;
     font-family: 'Antic Slab', serif;
@@ -22,9 +27,14 @@ a:link {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .name, .status {
-  font-size: 18px;
-  margin-top: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.status {
+    font-style: italic;
 }
 
 .channels {

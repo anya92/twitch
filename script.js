@@ -56,8 +56,11 @@ $(document).ready(function() {
                             logo = data3.logo;
                             name = data3.display_name;
                             status = "OFFLINE";
+                            channelURL = data3.url;
+                            console.log(channelURL);
                             $("#channelInfo").append("<div class = 'row channels'>" + "<div class='col-md-2'>" + "<img src='" + logo + "'>" +
-                                "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" + status + "</div>" + "</div>");
+                                "</div>" + "<div class='col-md-4 name'>" + name + "</div>" + "<div class='col-md-6 status'>" +
+                                "<a href='" + channelURL + "' target='_blank'>" + status + "</a></div>" + "</div>");
                         }
                     });
                 }
